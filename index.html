@@ -255,13 +255,21 @@
       box-shadow: var(--shadow);
     }
 
-    .quote-logo {
+    .quote-work-image-wrap {
       width: 100%;
-      max-width: 300px;
-      margin: 0 auto 22px;
-      background: #ffffff;
-      border-radius: 16px;
-      padding: 12px;
+      margin: 0 auto 24px;
+      border-radius: 18px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.16);
+      box-shadow: 0 14px 34px rgba(0,0,0,0.4);
+      background: #111111;
+    }
+
+    .quote-work-image {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+      object-position: center;
     }
 
     .quote-card h2 {
@@ -703,7 +711,9 @@
         </div>
 
         <aside class="quote-card">
-          <img class="quote-logo" src="images/macleod-logo.png" alt="Macleod Driveway & Stone logo" />
+          <div class="quote-work-image-wrap">
+            <img class="quote-work-image" src="images/hero-drive.jpg" alt="Finished driveway stone work by Macleod Driveway & Stone" />
+          </div>
 
           <h2>Need stone, gravel, or driveway work?</h2>
 
